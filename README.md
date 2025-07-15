@@ -1,4 +1,4 @@
-no<h1 align="center">⚙️ SA Python Modules</h1>
+<h1 align="center">⚙️ SA Python Modules</h1>
 <p align="center">
   <i>Lightweight. Modular. No Installation Required. Just Plug & Play.</i><br>
   <sub>Curated by <b>Sanskar Yerawar</b> 🧠 | MIT Licensed 📜</sub>
@@ -70,10 +70,10 @@ Feel free to:
 
 ## 📜 License
 
-This project is licensed under the **MIT License**, meaning you’re free to:
+<p>This project is licensed under the **MIT License**, meaning you’re free to:
 - Use it in personal or commercial projects
 - Modify and redistribute
-- Keep or remove credits (but giving credit is appreciated 😊)
+- Keep or remove credits (but giving credit is appreciated 😊)</p>
 
 ---
 
