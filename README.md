@@ -61,9 +61,6 @@ Feel free to:
 
 ---
 
-<p align="center"><b>Made with ❤️ by Sanskar Yerawar</b></p>
----
-
 ### 🧪 Example Usage
 
 Assume you downloaded `greet.py`, which contains a function `hi(name)`.
@@ -76,3 +73,7 @@ print(greet.hi("Sanskar"))
 
 ---
 output:- Hi Sanskar, how are you?
+
+---
+
+<p align="center"><b>Made with ❤️ by Sanskar Yerawar</b></p>
