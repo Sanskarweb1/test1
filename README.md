@@ -54,7 +54,7 @@ output:- Hi Sanskar, how are you?
 
 ---
 
-## ✏️ Customize Freely
+### ✏️ Customize Freely
 
 All modules in this repository are written in **pure Python** with no dependencies.  
 You are encouraged to **read, edit, and customize** any file to suit your personal or project-specific needs.
@@ -68,7 +68,7 @@ Feel free to:
 
 ---
 
-## 📜 License
+### 📜 License
 
 <p>This project is licensed under the **MIT License**, meaning you’re free to:
 - Use it in personal or commercial projects
