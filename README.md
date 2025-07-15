@@ -38,22 +38,6 @@ Each file contains **simple, well-documented functions** that are easy to use an
 
 ---
 
-### 🧪 Example Usage
-
-Assume you downloaded `greet.py`, which contains a function `hi(name)`.
-
-```python
-# main.py
-import greet
-
-print(greet.hi("Sanskar"))
-
----
-output:- Hi Sanskar, how are you?
-
-
----
-
 ### ✏️ Customize Freely
 
 All modules in this repository are written in **pure Python** with no dependencies.  
@@ -78,3 +62,17 @@ Feel free to:
 ---
 
 <p align="center"><b>Made with ❤️ by Sanskar Yerawar</b></p>
+---
+
+### 🧪 Example Usage
+
+Assume you downloaded `greet.py`, which contains a function `hi(name)`.
+
+```python
+# main.py
+import greet
+
+print(greet.hi("Sanskar"))
+
+---
+output:- Hi Sanskar, how are you?
