@@ -1,4 +1,4 @@
-<h1 align="center">⚙️ SA Python Modules</h1>
+no<h1 align="center">⚙️ SA Python Modules</h1>
 <p align="center">
   <i>Lightweight. Modular. No Installation Required. Just Plug & Play.</i><br>
   <sub>Curated by <b>Sanskar Yerawar</b> 🧠 | MIT Licensed 📜</sub>
@@ -50,3 +50,31 @@ print(greet.hi("Sanskar"))
 
 ---
 output:- Hi Sanskar, how are you?
+
+
+---
+
+## ✏️ Customize Freely
+
+All modules in this repository are written in **pure Python** with no dependencies.  
+You are encouraged to **read, edit, and customize** any file to suit your personal or project-specific needs.
+
+Feel free to:
+- Rename functions or files
+- Add new logic or enhancements
+- Remove parts you don’t need
+
+> ⚠️ If you improve a module and think it can help others, consider contributing it back!
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**, meaning you’re free to:
+- Use it in personal or commercial projects
+- Modify and redistribute
+- Keep or remove credits (but giving credit is appreciated 😊)
+
+---
+
+<p align="center"><b>Made with ❤️ by Sanskar Yerawar</b></p>
