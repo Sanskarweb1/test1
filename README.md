@@ -72,8 +72,8 @@ import greet
 print(greet.hi("Sanskar"))
 
 ---
-output:- Hi Sanskar, how are you?'''
+output:- Hi Sanskar, how are you?
 
 ---
 
-<p align="center"><b>Made with ❤️ by Sanskar Yerawar</b></p>
+<h1><p align="center"><b>Made with ❤️ by Sanskar Yerawar</b></p></h1>
