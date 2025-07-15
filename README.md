@@ -82,5 +82,5 @@ Hi Sanskar, how are you?
 
 <!-- ⚡ Animated Footer -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&center=true&vCenter=true&width=300&lines=Made+with+❤️+by+Sanskar+Yerawar" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&center=true&vCenter=true&width=300&lines=Made+by+Sanskar+Yerawar" alt="Typing SVG" />
 </p>
