@@ -47,3 +47,6 @@ Assume you downloaded `greet.py`, which contains a function `hi(name)`.
 import greet
 
 print(greet.hi("Sanskar"))
+
+---
+output:- Hi Sanskar, how are you?
