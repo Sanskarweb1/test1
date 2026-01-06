@@ -8,12 +8,12 @@ jobs:
       # 1. Get your code
       - uses: actions/checkout@v4
 
-      # 2. Install Go 1.23 (Compatible with Fyne)
+      # 2. Install Go 1.23
       - uses: actions/setup-go@v4
         with:
           go-version: '1.23'
 
-      # 3. Install Linux tools (Required to build Fyne)
+      # 3. Install Linux tools
       - name: Install System Deps
         run: |
           sudo apt-get update
@@ -26,14 +26,14 @@ jobs:
           go get fyne.io/fyne/v2
           go install fyne.io/fyne/v2/cmd/fyne@latest
 
-      # 5. Build the APK using the pre-installed Android SDK on GitHub
+      # 5. Build the APK
       - name: Build APK
         run: |
           fyne package -os android -appID com.sanskar.hello -name "HelloGo"
 
-      # 6. Upload the result so you can download it
+      # 6. Upload the result (Fixed Quote Issue)
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Hello-World-App
-          path: *.apk
+          path: "*.apk"
