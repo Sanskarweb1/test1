@@ -5,35 +5,20 @@ jobs:
   build-android:
     runs-on: ubuntu-latest
     steps:
-      # 1. Get your code
       - uses: actions/checkout@v4
 
-      # 2. Install Go 1.23
-      - uses: actions/setup-go@v4
+      # This automatically sets up the Android SDK and builds your app
+      # It is much more reliable than manual scripts
+      - name: Build with Fyne Cross
+        uses: fyne-io/fyne-cross-action@master
         with:
-          go-version: '1.23'
+          target: android
+          # The ID must match what you want your app to be called
+          args: -appID com.sanskar.hello -name "HelloGo"
 
-      # 3. Install Linux tools
-      - name: Install System Deps
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gcc libgl1-mesa-dev xorg-dev
-
-      # 4. Initialize Go Module & Install Fyne
-      - name: Setup Fyne
-        run: |
-          go mod init hello || true
-          go get fyne.io/fyne/v2
-          go install fyne.io/fyne/v2/cmd/fyne@latest
-
-      # 5. Build the APK
-      - name: Build APK
-        run: |
-          fyne package -os android -appID com.sanskar.hello -name "HelloGo"
-
-      # 6. Upload the result (Fixed Quote Issue)
+      # Upload the APK so you can download it
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Hello-World-App
-          path: "*.apk"
+          path: fyne-cross/dist/android/*.apk
