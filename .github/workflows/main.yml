@@ -7,16 +7,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # This automatically sets up the Android SDK and builds your app
-      # It is much more reliable than manual scripts
-      - name: Build with Fyne Cross
-        uses: fyne-io/fyne-cross-action@master
+      # 1. Set up Go
+      - name: Setup Go
+        uses: actions/setup-go@v4
         with:
-          target: android
-          # The ID must match what you want your app to be called
-          args: -appID com.sanskar.hello -name "HelloGo"
+          go-version: '1.23'
 
-      # Upload the APK so you can download it
+      # 2. Install the Fyne Cross Compiler (The Tool)
+      - name: Install Fyne Cross
+        run: go install github.com/fyne-io/fyne-cross@latest
+
+      # 3. Build the APK using Docker (Automatic)
+      # This pulls a pre-made Android environment so we don't need to install SDKs manually
+      - name: Build APK
+        run: |
+          fyne-cross android -appID com.sanskar.hello -name "HelloGo"
+
+      # 4. Upload the Result
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
