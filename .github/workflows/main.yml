@@ -1,31 +1,23 @@
-name: Build Android App
+name: Build Python APK
 on: [push]
 
 jobs:
-  build-android:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      # 1. Set up Go
-      - name: Setup Go
-        uses: actions/setup-go@v4
+      # This Action installs the Android SDK and compiles Python
+      - name: Build with Buildozer
+        uses: ArtemSBulgakov/buildozer-action-2@v1
         with:
-          go-version: '1.23'
+          command: buildozer android debug
+          buildozer_version: master
 
-      # 2. Install the Fyne Cross Compiler (The Tool)
-      - name: Install Fyne Cross
-        run: go install github.com/fyne-io/fyne-cross@latest
-
-      # 3. Build the APK using Docker (Automatic)
-      # This pulls a pre-made Android environment so we don't need to install SDKs manually
-      - name: Build APK
-        run: |
-          fyne-cross android -appID com.sanskar.hello -name "HelloGo"
-
-      # 4. Upload the Result
+      # Upload the result
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Hello-World-App
-          path: fyne-cross/dist/android/*.apk
+          name: Savings-App-Python
+          path: bin/*.apk
